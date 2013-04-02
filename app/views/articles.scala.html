@@ -1,0 +1,15 @@
+@(articles: List[Article])
+
+@main("Articles") {
+				<!-- <h3>The 2011-2012 Speakers</h3>	 -->
+		        <ul data-role="listview" data-inset="true">
+		        @for(article <- articles) {
+		            <li>
+		                <a href="#toobin">
+		                    <h4>@article.title</h4>
+		                    <h4>October 19, 2011</h4>                   
+		                </a>
+		            </li>
+		           }
+		        </ul>
+}
